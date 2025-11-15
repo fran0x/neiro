@@ -1,0 +1,30 @@
+{
+  "Strudel basic pattern": {
+    "prefix": "strudel-basic",
+    "body": [
+      "$: n(\"<$1>*8\").scale(\"e:minor\").octave(5)",
+      "  .s(\"piano\").att(.01).rel(3).gain(1.0)",
+      "  ._pianoroll()"
+    ],
+    "description": "Basic Strudel pattern scaffold"
+  },
+  "Strudel slowcat arrangement": {
+    "prefix": "strudel-slowcat",
+    "body": [
+      "$: slowcat([",
+      "  // intro",
+      "  silence,",
+      "  ",
+      "  // build",
+      "  $1,",
+      "  ",
+      "  // drop",
+      "  $2,",
+      "  ",
+      "  // outro",
+      "  $3",
+      "])"
+    ],
+    "description": "4-part arrangement with slowcat"
+  }
+}
